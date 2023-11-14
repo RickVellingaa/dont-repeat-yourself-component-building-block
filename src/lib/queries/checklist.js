@@ -1,7 +1,7 @@
 export default function getQueryToolboard(gql, slugUrl, principeSlug) {
   return gql`
     query Toolboard {
-      url(where: { slug: "home" }) {
+      url(where: { slug: "toegankelijkheid" }) {
         id
         url
         slug
@@ -27,6 +27,9 @@ export default function getQueryToolboard(gql, slugUrl, principeSlug) {
           }
           index
           slug
+          uitleg {
+            html
+          }
         }
         checklistItems {
           check

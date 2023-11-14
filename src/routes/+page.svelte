@@ -1,12 +1,12 @@
 <script>
     export let data
     import Toolboard from '../lib/components/toolboard.svelte';
+
+    $: principes = data.principes;
+    $: principe = data.principe;
+    $: url = data.url;
+
 </script>
 
-<!-- <pre>
-    {JSON.stringify(data, null, 2)}
-</pre> -->
+<Toolboard {principe} {url} {principes} />
 
-<p>
-    <Toolboard />
-</p>
