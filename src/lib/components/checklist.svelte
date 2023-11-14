@@ -203,18 +203,6 @@
     align-items: center;
   }
 
-
-/* TEST */
-
-.form-control label{
-  
-  font-weight: bold;
-  line-height: 1.1;
-  display: grid;
-  grid-template-columns: 1em auto;
-  gap: 0.5em;
-}
-
 input[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;

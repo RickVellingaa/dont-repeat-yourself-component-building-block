@@ -70,6 +70,10 @@ p {
   font-family: "Inter", sans-serif;
 }
 
+.uitleg-richtlijn p {
+  font-weight: normal;
+}
+
 .uitleg-richtlijn ul {
   margin-left: 1.5em;
   padding-top: 0.5em;
