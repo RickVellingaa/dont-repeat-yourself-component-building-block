@@ -1,6 +1,5 @@
 <script>
     import Sidebar from "./sidebar.svelte";
-    import Checklist from "./checklist.svelte";
   import Check from "./check.svelte";
 
     export let principes;
