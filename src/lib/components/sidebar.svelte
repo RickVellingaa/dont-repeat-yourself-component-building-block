@@ -1,8 +1,7 @@
 <script>
-  import Progressbar from "./progressbar.svelte";
-
+    import Progressbar from "./progressbar.svelte"; 
     export let principes;
-</script>
+</script>;
 
 <!-- <pre>{JSON.stringify(principes, null, 2)}</pre> -->
 
@@ -21,7 +20,6 @@
 </aside>
 
 <style>
-
     h5 {
         font-size: 1.5rem;
         font-weight: 500;
@@ -62,5 +60,4 @@
     span {
         font-weight: 100;
     }
-
 </style>
