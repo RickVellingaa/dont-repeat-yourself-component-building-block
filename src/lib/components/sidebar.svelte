@@ -6,22 +6,19 @@
 
 <!-- <pre>{JSON.stringify(principes, null, 2)}</pre> -->
 
-<div class="sidebar">
+<aside>
     <ul>
         {#each principes as principe}
         <li>
             <a href="/">
                 <h5>{principe.titel}</h5>
                 <span>Principe {principe.index}</span>
-                <div class="progress-container">
-                    <progress id="progress-partner" max="100" value="35" />
-                    <label class="progress-percentage" for="progress-partner">8/25</label>
-                </div>
+                <Progressbar />
             </a>
         </li>
         {/each}
     </ul>
-</div>
+</aside>
 
 <style>
 
@@ -35,7 +32,7 @@
         font-weight: 100;
     }
 
-    .sidebar {
+    aside {
         display: block;
         position: -webkit-sticky;
         position: sticky;
@@ -66,39 +63,4 @@
         font-weight: 100;
     }
 
-    .progress-container {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: flex-end;
-		gap: 1em;
-		margin-top: 0.25em;
-	}
-
-
-    progress {
-		width: 100%;
-	}
-
-	progress[value] {
-		/* Reset the default appearance */
-		-webkit-appearance: none;
-		appearance: none;
-		height: 10px;
-	}
-
-	/* chrome/safari */
-	progress[value]::-webkit-progress-bar {
-		background-color: var(--c-container-stroke);
-		border-radius: 0.5em;
-	}
-
-	progress[value]::-webkit-progress-value {
-		background-color: var(--c-pink);
-		border-radius: 0.5em;
-	}
-
-	.progress-percentage {
-		height: 85%;
-	}
 </style>

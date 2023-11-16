@@ -26,6 +26,9 @@
 
   /* modal button */
   --c-modal-button: rgb(99, 99, 99);
+
+  /* font */
+  --f-size-regular: 16px;
 }
 
 * {
@@ -65,20 +68,22 @@ h3 {
   font-family: "Inter", sans-serif;
 }
 
-p {
+h4 {
   font-weight: 500;
   font-family: "Inter", sans-serif;
 }
 
-.uitleg-richtlijn p {
-  font-weight: normal;
+p {
+  font-weight: 100;
+  font-family: "Inter", sans-serif;
 }
 
-.uitleg-richtlijn ul {
+ul {
   margin-left: 1.5em;
   padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
-.uitleg-richtlijn ul li {
+li {
   padding: 0.2em 0;
 }
