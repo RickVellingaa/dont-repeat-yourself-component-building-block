@@ -11,11 +11,12 @@
         {#each principes as principe}
         <li>
             <a href="/">
-                <section>
-                    <h5>{principe.titel}</h5>
-                    <span>Principe {principe.index}</span>
-                </section>
-                <Progressbar />
+                <h5>{principe.titel}</h5>
+                <span>Principe {principe.index}</span>
+                <div class="progress-container">
+                    <progress id="progress-partner" max="100" value="35" />
+                    <label class="progress-percentage" for="progress-partner">8/25</label>
+                </div>
             </a>
         </li>
         {/each}

@@ -1,6 +1,7 @@
 <script>
     import Sidebar from "./sidebar.svelte";
     import Checklist from "./checklist.svelte";
+  import Check from "./check.svelte";
 
     export let principes;
     export let principe;
@@ -8,16 +9,16 @@
 
 </script>
 
-<div class="checklist">
-    <Checklist {principe} {url} />
+<section class="checklist">
+    <Check {principe} {url} />
     <Sidebar {principes}/>
-</div>
+</section>
 
 <style>
-    .checklist {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 1em;
-        gap: 1em;
-    }
+.checklist {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em;
+    gap: 1em;
+}
 </style>
