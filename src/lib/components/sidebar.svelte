@@ -1,7 +1,7 @@
 <script>
     import Progressbar from "./progressbar.svelte"; 
     export let principes;
-</script>;
+</script>
 
 <!-- <pre>{JSON.stringify(principes, null, 2)}</pre> -->
 
