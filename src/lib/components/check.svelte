@@ -1,8 +1,37 @@
 <script>
+    import { onMount } from 'svelte';
+  
     export let principe;
     export let url;
   
     const checkedSuccescriteria = url.checks[0] ? url.checks[0].succescriteria : [];
+  
+    onMount(() => {
+      const detailsElements = document.querySelectorAll('details');
+  
+      detailsElements.forEach((details) => {
+        details.addEventListener('toggle', (event) => {
+          if (event.target.open) {
+            closeOtherDetails(details);
+            scrollToDetails(details);
+          }
+        });
+      });
+    });
+  
+    function closeOtherDetails(currentDetails) {
+      const detailsElements = document.querySelectorAll('details');
+  
+      detailsElements.forEach((details) => {
+        if (details !== currentDetails && details.open) {
+          details.open = false;
+        }
+      });
+    }
+  
+    function scrollToDetails(details) {
+      details.scrollIntoView({ behavior: 'smooth' });
+    }
   </script>
 
 <section>
